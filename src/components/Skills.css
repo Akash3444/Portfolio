@@ -1,0 +1,77 @@
+.skills {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.skills > h1 {
+  text-align: center;
+  font-family: var(--padauk);
+  letter-spacing: 1px;
+  margin-bottom: 1em;
+  margin-top: 2em;
+  text-transform: uppercase;
+}
+
+.skills > h1 > span {
+  color: #00bfff;
+}
+
+.skill {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.skill__wrapper {
+  display: grid;
+  grid-row-gap: 2em;
+  justify-content: center;
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 4em;
+}
+
+.skill__img {
+  display: flex;
+  justify-content: center;
+}
+
+.skill__img > img {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 10px;
+  /* border: 1px solid red; */
+}
+
+.skill__name {
+  font-family: var(--tajawal);
+  font-size: 22px;
+}
+
+@media (max-width: 600px) {
+  .skill__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 600px) {
+  .skill__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .skill__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .skill__wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .skill__wrapper {
+    width: 100%;
+  }
+}

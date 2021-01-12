@@ -1,0 +1,20 @@
+.footer {
+  background-color: #000;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.footer__icon {
+  color: white;
+  margin-right: 1.5em;
+}
+
+.footer__icon:nth-child(3) {
+  margin: 0;
+}
+
+.footer__social {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
