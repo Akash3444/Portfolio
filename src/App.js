@@ -1,11 +1,21 @@
-import "./App.css";
+import React from "react";
+import Header from "./components/Header";
+import Services from "./components/Services";
+import Skills from "./components/Skills";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import "./style.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <h1> Hello World </h1>
+      <main className="main" style={{ background: "#fff" }}>
+        <Header />
+        <Services />
+        <Skills />
+        <Contact />
+        <Footer />
+      </main>
     </div>
   );
 }
-
-export default App;
